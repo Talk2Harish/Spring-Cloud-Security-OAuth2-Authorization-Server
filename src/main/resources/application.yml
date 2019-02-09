@@ -1,0 +1,26 @@
+server:
+  port: 8886
+  servlet:
+    context-path: /service
+
+#spring:
+#  security:
+#    user:
+#      name: Harish
+#      password: IDontKnow
+#      roles:
+#      - USER
+  
+security:    
+  oauth2:
+    client:
+      client-id: HarishForJava
+      client-secret: SorryNoSecret
+      authorized-grant-types:
+      - password
+      - client_credentials
+      - refresh_token
+      - authorization_code
+      scope:
+      - read
+      - write
